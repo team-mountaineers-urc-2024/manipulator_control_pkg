@@ -1,0 +1,54 @@
+/**:
+  ros__parameters:
+
+    can_ids:
+      manipulator_motors:
+        elbow: 325
+        shoulder: 326
+        linear_rail: 327
+        wrist_pitch: 328
+        wrist_roll: 329
+
+    can_topic_name: outgoing_can_commands
+    uart_topic_name: outgoing_uart_commands
+
+    pico_topic_name: pico_sub
+
+    manipulator_control_topic: manipulator_control
+    manipulator_joystick_topic: joy
+    debugging: 0
+
+    uart_path_wrist_roll: /dev/urc/uart_roll
+    uart_path_linear_rail: /dev/urc/uart_rail
+    uart_baudrate: 115200
+
+    max_dps: 20
+
+    required_presses_for_restart_btn: 20
+
+    joy_msg_indexes:
+
+      restart_btn_index: 4 # Top Face Button
+
+      linear_rail_left_btn_index: 6 # Left Bumper
+      linear_rail_right_btn_index: 7 # Right Bumper
+
+      shoulder_control_axes_index: 1 # Left Stick Up/Down
+      elbow_control_axes_index: 3 # Right Stick Up/Down
+
+      wrist_speed_control_axes_index: 4 # Right trigger
+      wrist_roll_control_axes_index: 6 # Left/Right D-pad
+      wrist_pitch_control_axes_index: 7 # Up/Down D-pad
+
+      gripper_open_btn_index: 3 # Right Face Button
+      gripper_close_btn_index: 1 # Left Face Button
+
+      screwdriver_control_axes_index: 5 # Left trigger
+      solenoid_control_btn_index: 0 # Bottom Face Button
+
+    pico_internal:
+      max_pwm_duty_cycle: 100 
+      dc_motor_ids:
+        gripper: 33
+        screw_driver: 34
+        solenoid: 35
